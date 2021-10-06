@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Joe Baobab</title>
+</head>
+<body>
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+           <img src="images/BAOBAB-LOGO.png" alt="logo de Jo">
+          </div>
+        </div>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="#presentation">Présentation</a>
+          <a href="#projets">Projets</a>
+          <a href="#devis">Demander un devis</a>
+        </div>
+      </div>
+      <header>
+          <a href="#presentation"><button>PRESENTATION</button></a>
+          <a href="#devis"><button>DEVIS</button></a>     
+      </header>
+      <div class="quote">
+          <h2>« JOE BAOBAB  ‘LE PANSEUR DE RONDIN’ SCULPTE VOS JARDINS »</h2>
+        </div>
+        <div id="presentation">
+            <div class="presentation">
+                <h3>présentation</h3>
+                <p><span>paysagiste</span><p>
+                <p>Spécialiste de la conception d'extérieur et de l'aménagement paysager en île de france. Faites appel à un professionnel pour vos travaux!
+                    Aménagement de jardin et de terrasses. Création de pelouse, clôture, bassin, plantation d'arbres et de massifs.
+                </p>
+                <p><span>entretien des espaces verts</span><p>
+                <p>Entretien des massifs, taille de haies, élagage, abattage, embellissement, tonte, ramassage de feuilles...</p>
+            </div>
+            <div class="joe-sur-baobab">
+                <img src="images/Joe-sur-baobab.jpg" alt="églagueur de baobab">
+            </div>
+        </div>
+        <div id="projets">
+            <h3>projets</h3>
+            <div class="projets">
+                <div id="photo" class="photo1"><img src="images/1.jpg" alt=""></div>
+                <div id="photo" class="photo2"><img src="images/2.jpg" alt=""></div>
+                <div id="photo" class="photo3"><img src="images/3.jpg" alt=""></div>
+                <div id="photo" class="photo4"><img src="images/4.jpg" alt=""></div>
+                <div id="photo" class="photo5"><img src="images/5.jpg" alt=""></div>
+                <div id="photo" class="photo6"><img src="images/6.jpg" alt=""></div>
+              </div>
+          
+    
+    </div>
+        <div id="devis">
+          <h3>demander un devis</h3>
+          <form action="">
+            <label for="nom">Nom :</label>
+            <input class="input" type="text" id="nom" placeholder="Tran" autofocus="" required="">
+            <label for="prenom">Prenom :</label>
+            <input class="input" type="text" id="prenom" placeholder="Sandy" autofocus="" required="">
+            <label for="mail">E-mail :</label>
+            <input class="input" type="text" id="mail" placeholder="nom@adresse.com" autofocus="" required="">
+            <label for="nom">Type de demande :</label>
+            <input class="input" type="text" id="demande" placeholder="Type de demande" autofocus="" required="">
+            <textarea class="input" id="description" name="description" placeholder="Description du projet" style="height:200px"></textarea>
+            <input type="submit" value="ENVOYER">
+          </form>
+        </div>
+
+    <footer>
+      <div class="footer">
+        <div class="contact">
+          <h3>contact</h3>
+          <p>7 rue des Arbres, 75020 Paris</p>
+          <p>+33(0)6 12 34 56 78</p>
+          <p>joe.baobab@gmail.com</p>
+          <div class="rs">
+            <img src="images/facebook.png" alt="">
+            <img src="images/instagram.png" alt="">
+          </div> 
+          <p>©2021 JOE BAOBAB.FR</p>
+        </div>
+       
+      </div>
+      
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/fleche.png" alt=""></button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

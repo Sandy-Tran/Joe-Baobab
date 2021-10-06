@@ -1,0 +1,560 @@
+@font-face {
+    font-family: "Kiona-Regular";
+      src: url(polices/Kiona-Regular.ttf) format('truetype');
+  }
+
+@font-face {
+    font-family: "Roboto";
+      src: url(polices/Roboto-Thin.ttf) format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    margin: 0px;
+    font-family: 'Kiona-Regular';
+    background-color: #efefef;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    background-color: #efefef;
+    position: relative;
+  }
+  
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+  }
+
+  .nav > .nav-header > .nav-title > img{
+      height: 100px;
+      width: 100px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 20px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 60px 13px 10px;
+    text-decoration: none;
+    color: #4D4D4D;
+  }
+  
+  .nav > .nav-links > a:hover {
+    text-decoration: underline;
+    text-underline-position: under;
+    color: #2C4E3B;
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  
+  header{
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("images/19.jpg");
+      background-size: cover;
+  }
+  header > a > button{
+      font-family: 'Kiona-Regular';
+      font-size: 1.2em;
+      margin : 30px;
+      height: 50px;
+      padding-left: 20px;
+      padding-right: 20px;
+      background: rgba( 239, 239, 239, 0.25 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      backdrop-filter: blur( 5px );
+      -webkit-backdrop-filter: blur( 5px );
+      border-radius: 6px;
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      color: #efefef;
+      border: none; 
+      transition: transform .1s;
+  }
+
+  a > button:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+  }
+
+  .quote{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .quote > h2{
+      padding: 50px;
+      font-size: 2em;
+      color: #2C4E3B;
+  }
+
+  #presentation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 30px;
+  }
+
+  .presentation{
+      width: 500px;
+  }
+
+  h3{
+      font-size: 1.5em;
+      text-decoration: underline;
+      text-decoration-color: #2C4E3B;
+      text-underline-position: under;  
+  }
+
+  .presentation > p{
+      font-family: 'Roboto';
+      font-size: 1em;
+  }
+
+  .presentation > p > span{
+      font-family: 'Kiona-Regular';
+      font-size: 1.3em;
+      color: #2C4E3B;
+  }
+
+  .joe-sur-baobab > img{
+      height: 500px;
+      width: 500px;
+  }
+
+  #projets > h3{
+      text-align: center;
+      padding: 50px;
+  }
+
+  .projets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px 50px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "photo1 photo2 photo3"
+      "photo4 photo5 photo6";
+  }
+  
+  .photo1 { 
+    grid-area: photo1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  .photo2 { 
+    grid-area: photo2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo3 { 
+    grid-area: photo3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo4 { 
+    grid-area: photo4;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+  }
+  
+  .photo5 { 
+    grid-area: photo5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .photo6 { 
+    grid-area: photo6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+  #photo > img{
+    transition: transform .5s ease;
+  }
+
+  #photo > img:hover{
+    -ms-transform: scale(1.3);
+    -webkit-transform: scale(1.3); 
+    transform: scale(1.3);
+  }
+    
+  #devis > h3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #2C4E3B;
+    text-underline-position: under;  
+    padding-top: 30px;
+  }
+
+
+  form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 200px 0px 200px;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  .input:focus{
+    outline: none !important;
+    border: 2px solid #2C4E3B;
+  }
+
+  input[type=submit] {
+    width: 110px;
+    background-color: #2C4E3B;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  .footer{
+    margin-top: 30px;
+    background-color: #2C4E3B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: url(images/footer.jpg);
+    background-size: contain;
+
+  }
+
+  .contact{
+    background: rgba( 239, 239, 239, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+   backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 0 50px;
+    margin: 30px 0 30px 0;
+    line-height: 10px;
+
+  }
+
+  .rs > img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4D4D4D;
+    color: #efefef;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+
+  #myBtn > img{
+    height: 20px;
+    width: 20px;
+
+  }
+  
+  #myBtn:hover {
+    background-color: #2C4E3B;
+  }
+
+  @media (max-width:350px){
+    header > a > button{
+      margin: 5px;
+    }
+    .contact{
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width:576px){
+    .nav > .nav-header > .nav-title > img{
+      height: 80px;
+      width: 80px;
+    }
+    .nav > .nav-links > a {
+      padding: 13px 80px 13px 80px;
+    }
+    header > a > button{
+      margin: 10px;
+    }
+    .quote > h2{
+      font-size: 1.1em;
+      text-align: center;
+    }
+    #presentation{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .presentation > h3{
+      text-align: center;
+    }
+    .presentation > p{
+      text-align: center;
+    }
+    .joe-sur-baobab > img{
+      display: none;
+    }
+    .contact{
+      margin: 0;
+      font-size: 12px;
+    }
+    .rs > img{
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+      justify-content: center;
+    }
+  }
+  
+
+  @media (max-width:768px) {
+    header > a > button{
+      font-size: 1em;
+    }
+    .quote > h2{
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .presentation{
+      width: 100%;
+    }
+    .presentation > h3{
+      font-size: 1.2em;
+    }
+    .presentation > p{
+      font-size: 0.9em;
+    }
+    #projets > h3{
+      font-size: 1.2em;
+    }
+    .projets{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+    }
+    #photo > img{
+      height: 200px;
+      width: 300px;
+    }
+    #photo > img:hover{
+      -ms-transform: scale(1.2);
+      -webkit-transform: scale(1.2); 
+      transform: scale(1.2);
+    }
+    #devis > h3{
+      font-size: 1.2em;
+   }
+    form{
+     padding: 0 10px 0 10px;
+   }
+  
+    .contact > h3{
+      font-size: 1.2em;
+   }
+    .contact > p{
+      font-size: 0.9em;
+    }
+    .contact{
+     height: 200px;
+     line-height: 1px;
+   }
+}
+
+@media (max-width:992px){
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #4D4D4D;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #efefef;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 110px;
+    left: 0px;
+    z-index: 9999;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    padding-top: 30px;
+    height: calc(60vh - 50px);
+    overflow-y: auto;
+  }
+
+  .nav > .nav-links > a {
+    padding: 13px 80px 13px 80px;
+  }
+  .quote > h2{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .presentation{
+    width: 300px;
+  }
+  .presentation > h3{
+    font-size: 1.5em;
+  }
+  .presentation > p{
+    font-size: 1em;
+  }
+  .joe-sur-baobab > img{
+    height: 400px;
+    width: 400px;
+  }
+  #projets > h3{
+    font-size: 1.5em;
+  }
+  .projets{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #photo > img{
+    height: 200px;
+    width: 300px;
+  }
+  #photo > img:hover{
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2);
+  }
+  #devis > h3{
+    font-size: 1.2em;
+  }
+  form{
+    padding: 0 20px 0 20px;
+  }
+
+  .contact > h3{
+    font-size: 1.2em;
+  }
+  .contact > p{
+   font-size: 0.9em;
+  }
+  .contact{
+    height: 200px;
+    line-height: 1px;
+  }
+  form{
+    padding: 0 40px 0 40px;
+  }
+}
+
+@media (max-width: 1200px){
+  .quote > h2{
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .presentation{
+    text-align: center;
+  }
+  form{
+    padding: 0 30px 0 30px;
+  }
+
+}
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
