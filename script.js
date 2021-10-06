@@ -1,3 +1,10 @@
+function Scrolldown() {
+  window.scrollTo(0, 0); 
+}
+
+window.onload = Scrolldown;
+
+
 //Get the button
 var mybutton = document.getElementById("myBtn");
 
