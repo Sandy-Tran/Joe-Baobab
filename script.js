@@ -1,8 +1,8 @@
-function Scrolldown() {
-  window.scroll(0, 0); 
-}
+// function Scrolldown() {
+//   window.scroll(0, 0); 
+// }
 
-window.onload = Scrolldown;
+// window.onload = Scrolldown;
 
 
 //Get the button
